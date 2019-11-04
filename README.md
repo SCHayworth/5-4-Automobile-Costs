@@ -29,9 +29,17 @@
 
 #### show_expenses function
     START
-      Pass In: monthly_loan, monthly_insurance, monthly_gas, monthly_oil, monthly_tires, monthly_maintenance
-      CALCULATE monthly_total
-        Sum all values passed to function
+      Pass In: Any number of expenses
+      DETERMINE the number of expenses
+      Set expense_count to the number of expenses
+      IF expense_count > 0
+        Set monthly_total to 0
+        FOR each expense
+          INCREMENT monthly_total by expense
+        ENDFOR
+      ELSE
+        Set monthly_total to 0
+      ENDIF
       PRINT monthly_total
       CALCULATE yearly_total
         Multiply monthy_total by 12
