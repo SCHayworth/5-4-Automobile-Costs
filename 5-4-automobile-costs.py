@@ -24,10 +24,17 @@ def main():
 
 # Define the show_expenses function
 # Calculates monthly and yearly auto costs
-def show_expenses(loan, ins, gas, oil, tires, maint):
+def show_expenses(*expenses):
 
-    # Calculate the monthly total of auto costs and displays the monthly and yearly costs
-    monthly_total = loan + ins + gas + oil + tires + maint # Sums all of the monthly costs
+    # Get the total number of arguments passed
+    expense_count = len(expenses)
+    if expense_count > 0 :
+        monthly_total = 0
+        for elem in expenses :
+            monthly_total += elem
+    else:
+        monthly_total = 0
+    
     print(f'Total monthly expense: ${monthly_total:,.2f}') # Displays the total monthly cost
     print(f'Total annual expense: ${monthly_total * 12:,.2f}') # Calculates and displays the cost per year.
 
