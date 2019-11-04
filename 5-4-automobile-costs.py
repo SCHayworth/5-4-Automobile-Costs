@@ -39,7 +39,7 @@ def show_expenses(*expenses):
 
     # Display the monthly and yearly expenses.
     print(f'Total monthly expense: ${monthly_total:,.2f}')
-    print(f'Total annual expense: ${monthly_total * 12:,.2f}')
+    print(f'Total annual expense: ${monthly_total * 12:,.2f}') # Multiply monthly_total by 12 to get the yearly total
 
 # Call the main function to execute the program.
 main()
