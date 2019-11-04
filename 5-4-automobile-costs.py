@@ -29,8 +29,7 @@ def show_expenses(*expenses):
     # Get the total number of arguments passed
     expense_count = len(expenses)
 
-    # If there are arguments passed, add them to the total until there are no more arguments to add.
-    # Otherwise, set monthly_total to 0.
+    # If there are arguments passed, add them to the total until there are no more arguments to add. Otherwise, set monthly_total to 0.
     if expense_count > 0 :
         monthly_total = 0
         for elem in expenses :
