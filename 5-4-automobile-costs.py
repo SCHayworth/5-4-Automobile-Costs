@@ -28,8 +28,8 @@ def show_expenses(loan, ins, gas, oil, tires, maint):
 
     # Calculate the monthly total of auto costs and displays the monthly and yearly costs
     monthly_total = loan + ins + gas + oil + tires + maint # Sums all of the monthly costs
-    print(f'Total monthly expense: ${monthly_total:.2f}') # Displays the total monthly cost
-    print(f'Total annual expense: ${monthly_total * 12:.2f}') # Calculates and displays the cost per year.
+    print(f'Total monthly expense: ${monthly_total:,.2f}') # Displays the total monthly cost
+    print(f'Total annual expense: ${monthly_total * 12:,.2f}') # Calculates and displays the cost per year.
 
 # Call the main function to execute the program.
-main()    
+main()
